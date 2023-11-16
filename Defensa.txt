@@ -1,0 +1,26 @@
+Diseño General:
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+El programa cumple con los requisitos del enunciado al simular un sistema de estacionamiento con control de acceso, permitiendo la entrada y salida de vehículos.
+
+Entrada/Salida Aleatoria: Se implementa la entrada y salida de vehículos de forma aleatoria, cumpliendo con la descripcion del enunciado.
+
+Evitar Inanición: El diseño asegura que, antes o después, un vehículo que espera la entrada al estacionamiento tendrá acceso, evitando la inanición.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Hilos y Control de Concurrencia:
+Clase Vehiculo y Parking: Se utilizan hilos para representar vehículos, y se implementa el control de acceso al estacionamiento mediante sincronización y wait/notifyAll, evitando condiciones de carrera.
+
+Clase Plaza: La información sobre las plazas se maneja de manera segura, evitando problemas de concurrencia.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Tratamiento de Excepciones:
+Manejo de InterruptedException: Se maneja correctamente la excepción para interrupciones relacionadas con hilos durante las operaciones de espera.
+
+Manejo Adicional: El código proporciona un manejo básico de excepciones. Si hay escenarios específicos que deberían manejarse de manera diferente, podrías considerar expandir el manejo de excepciones según sea necesario.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Javadoc y Documentación:
+Generación de Javadoc: El código incluye documentación Javadoc, facilitando la comprensión de las clases y métodos.
+README.txt: El archivo README.txt proporciona información clara sobre las clases, métodos y cómo ejecutar el programa, facilitando su comprensión y uso.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Mejoras Potenciales:
+Podrian Implementarse mas Excepciones para asi saber en que parte del programa pueden darse los fallos.
+En resumen, el programa cumple con los requisitos del enunciado, implementa de manera efectiva el control de acceso concurrente y proporciona una documentación adecuada para su comprensión y uso.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
