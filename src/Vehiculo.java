@@ -1,5 +1,5 @@
 /**
- * La clase Vehiculo representa un vehículo que puede entrar y salir de un estacionamiento.
+ * La clase Vehículo representa un vehículo que puede entrar y salir de un estacionamiento.
  * Cada vehículo tiene un identificador único, una plaza asignada y pertenece a un estacionamiento.
  */
 public class Vehiculo extends Thread {
@@ -16,10 +16,10 @@ public class Vehiculo extends Thread {
     /**
      * Estacionamiento al que pertenece el vehículo.
      */
-    private Parking pr;
+    private final Parking pr;
 
     /**
-     * Constructor de la clase Vehiculo.
+     * Constructor de la clase Vehículo.
      *
      * @param cocheID         Identificador único del vehículo.
      * @param plazaAsignada   Plaza asignada al vehículo en el estacionamiento.

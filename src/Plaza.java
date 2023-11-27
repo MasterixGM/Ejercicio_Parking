@@ -25,17 +25,6 @@ public class Plaza {
     }
 
     /**
-     * Constructor de la clase Plaza que toma un objeto Parking como parámetro.
-     *
-     * @param ocupado  Indica si la plaza está ocupada por un vehículo.
-     * @param nPlazas  Número único asociado a la plaza.
-     * @param p        Objeto Parking al que pertenece la plaza.
-     */
-    public Plaza(boolean ocupado, int nPlazas, Parking p) {
-        // Puedes añadir lógica específica relacionada con el estacionamiento, si es necesario.
-    }
-
-    /**
      * Devuelve true si la plaza está ocupada por un vehículo, false si está disponible.
      *
      * @return true si la plaza está ocupada, false si está disponible.

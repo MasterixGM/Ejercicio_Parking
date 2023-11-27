@@ -100,7 +100,7 @@ public class Parking {
      * @param args Argumentos de la línea de comandos (no utilizados en este caso).
      */
     public static void main(String[] args) {
-        int numeroPlazas = 5;
+        int numeroPlazas = 1;
         int numeroCoches = 10;
 
         List<Plaza> plazas = new ArrayList<>(numeroPlazas);
@@ -112,7 +112,7 @@ public class Parking {
 
         Parking p = new Parking(plazas, vehiculos);
 
-        for (int i = 0; i < numeroCoches; i++) {
+        for (int i = 0; i <= numeroCoches; i++) {
             // Si el coche no tiene plaza asignada, el número de la plaza será -1.
             Vehiculo vehiculo = new Vehiculo(i, new Plaza(false, -1), p);
             Thread vehiculoThread = new Thread(vehiculo);
